@@ -8,14 +8,14 @@ The purpose of the program is to demonstrate the efficiency of using multi-threa
 
 ## Requirements:
 
-This program requires a C compiler and POSIX thread support.  The file “pokemon.csv” must also be in the current working directory.
+The program requires a C compiler and POSIX thread support.  The file “pokemon.csv” must also be in the current working directory.
 
 ## To build and run the program:
 
-Open a command-line interface and navigate to the directory containing the file “pokemondataquery.c.”  To build the program, use the command “make” or “gcc -Wall -pthread pokemondataquery.c optionA.c createPokemon.c addPokemon.c cleanup.c -o pokemondataquery.”  To run the program, use “./pokemondataquery.” 
+Open a command-line interface and navigate to the directory containing the file “main.c.”  To build the program, use the command “make” or “gcc -Wall -pthread main.c appendMain.c createPokemon.c addPokemon.c cleanUp.c copyData.c createFile.c fileCheck.c -o main.”  To run the program, use “./main.” 
 
 ## Notes:
 
-The program was tested on macOS 15.7 using clang.
+The program was tested on macOS 15.7 using Clang.
 
 
