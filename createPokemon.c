@@ -7,8 +7,8 @@
 //Outputting statements:
 void displayOptions() {
 	printf("\nYou have the following options: to retrieve the information for all Pokemon of a specific Type 1, type \"a\";");
-	printf("  to save all query results in a file, type \"b\";");
-	printf("  and if you are finished creating files, type \"c.\"\n\n");
+	printf(" to save all query results in a file, type \"b\";");
+	printf(" and if you are finished creating files, type \"c.\"\n\n");
 }
 
 //Assigning data read from a file to structure variables:
