@@ -10,27 +10,19 @@ int addPokemon(Array *arr, Pokemon *pokemon, int pos) {
 	int index;
 	int C_OK = 0;
 	int C_NOK = -1;
-
 	if (pos < 0 || pos > arr->size) {
   		return C_NOK;
 	}
-  
 	newArr = calloc(arr -> size + 1, sizeof(Pokemon*));
-
 	for (index = 0; index < pos; ++index) {
-  		newArr[index] = arr->elements[index];
+  		newArr[index] = arr -> elements[index];
   	}
-
   	newArr[index] = pokemon;
-
   	for (; index < arr -> size; ++index) {
   		newArr[index + 1] = arr -> elements[index];
   	}
-
-  	free(arr -> elements);
   	arr -> elements = newArr;
   	arr -> size++;
-
   	return C_OK;
 }
 

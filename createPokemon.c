@@ -5,11 +5,10 @@
 #include "pokemondataquery.h"
 
 //Outputting statements:
-void* displayOptions(void *arg) {
-	printf("\nIf you would like to retrieve the information for all Pokemon of a specific \"type 1,\" type \"a.\"");
-	printf("  If you would like to save all query results in a file, type \"b.\"");
-	printf("  If you are finished creating files, type \"c.\"\n\n");
-	return NULL;
+void displayOptions() {
+	printf("\nYou have the following options: to retrieve the information for all Pokemon of a specific Type 1, type \"a\";");
+	printf("  to save all query results in a file, type \"b\";");
+	printf("  and if you are finished creating files, type \"c.\"\n\n");
 }
 
 //Assigning data read from a file to structure variables:

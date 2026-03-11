@@ -1,3 +1,8 @@
+//Including the libraries:
+#include <pthread.h>
+
+extern pthread_mutex_t lock;
+
 //Creating a structure, "Pokemon":
 typedef struct {
 	char number[10];
@@ -17,26 +22,26 @@ typedef struct {
 
 //Creating a structure, "Array":
 typedef struct { 
+	char pokeFile[20];
+	char createdFile[20];
+	char userType1[20];
 	int size;
+	int capacity;
 	Pokemon **elements;
 } Array;
 
-//Creating a structure for threaded arguments:
-struct threadArgs{
-	char input2A[20];
-	char input2B[20];
-	char sFileName[20];
-	char *type1s;
-	int totalNumQueries;
-};
-
 //Declaring functions:
-void *optionA(void *);
-void *displayOptions(void*);
+void appendMain();
+void *copyData(void *);
+void *createFile(void *);
+void displayOptions();
+Array* pokemonsArray(int);
+char* fileCheck();
 void printPokemon(Pokemon*, FILE *file2); 
 void createPokemon(char*, char*, char*, char*, char*, char*, char*, char*, char*, char*, char*, char*, char*, Pokemon**);
 int addPokemon(Array*, Pokemon*, int);
-void cleanup(Array *);
+void cleanUp(Array *);
 void removeConsecutiveCommas(char*);
-void strtrim(char* str);
+void strtrim(char*);
+
 
