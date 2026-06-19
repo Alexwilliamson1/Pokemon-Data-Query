@@ -1,18 +1,16 @@
-# Pokemon Data Query
+# Pokemon Data Query v1.0.0
 
 ## Description:
 
-The program uses multi-threading and dynamic memory allocation to read, copy, and write data from a .csv file while simultaneously processing user input.  After verifying that the “pokemon.csv” data file exists in the user’s working directory, the program asks the user whether they would like to search the file for Pokemon of a specific type.  The user also has the option to write their query results to a new file at any time.  
-
-The purpose of the program is to demonstrate the efficiency of using multi-threading when, for example, performing operations on a large dataset or database.  Future improvements would involve expanding search criteria, developing the user interface, and incorporating larger, more comprehensive datasets.
+The program uses a command-line interface to present user options for querying a data file and saving query results.  It implements multi-threading and dynamic memory allocation to copy, save, and write file data according to the user's input.
 
 ## Requirements:
 
-The program requires a C compiler and POSIX thread support.  The file “pokemon.csv” must also be in the current working directory.
+The program requires a C compiler and POSIX thread support.  
 
 ## To build and run the program:
 
-Open a command-line interface and navigate to the directory containing the file “main.c.”  To build the program, use the command “make” or “gcc -Wall -pthread main.c appendMain.c createPokemon.c addPokemon.c cleanUp.c copyData.c createFile.c fileCheck.c -o main.”  To run the program, use “./main.” 
+Save all the program files, including "makefile" and "pokemon.csv," in one directory (folder).  Then, open a command-line interface, navigate to the directory containing the files, and run the command "make."  Run the command “./main” to start the program. 
 
 ## Notes:
 
