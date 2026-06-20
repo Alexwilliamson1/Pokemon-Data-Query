@@ -4,7 +4,9 @@
 #include <pthread.h>
 #include "header.h"
 
-//The following function performs queries and saves the results in files according to user input.  Threads are created for running functions that copy and write file data and a mutex is used for accessing and modifying shared structure variables.
+//The following function performs queries and saves the results in files according to user input.  
+//Threads are created for running functions that copy and write file data and a mutex is used for 
+//accessing and modifying shared structure variables.
 void loop(arguments *args, bool *endLoop, int *fileNamesLength, char (*fileNames)[30], int *numFiles) {
 	pthread_t t1, t2;
 	array *data = args -> copiedPokemon;
