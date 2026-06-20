@@ -1,4 +1,4 @@
-# Pokemon Data Query v1.0
+# Pokemon Data Query
 
 ## Description:
 
