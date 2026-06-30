@@ -6,7 +6,7 @@ The program uses a command-line interface to present user options for querying a
 
 ## Requirements:
 
-The program requires a C compiler and POSIX thread support.  
+The program requires a C compiler and POSIX threads support.  
 
 ## To build and run the program:
 
