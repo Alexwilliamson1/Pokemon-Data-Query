@@ -10,7 +10,7 @@ The program requires a C compiler and POSIX threads support.
 
 ## To build and run the program:
 
-Save all the program files, including "makefile" and "pokemon.csv," in one directory (folder).  Then, open a command-line interface, navigate to the directory containing the files, and run the command `make`.  Run the command `./main` to start the program. 
+Save all the program files, including "makefile" and "pokemon.csv," in one directory (folder).  Then, open a command-line interface, navigate to the directory containing the files, and run the command `make.`  Run the command `./main` to start the program. 
 
 ## Notes:
 
